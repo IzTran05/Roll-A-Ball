@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Runtime.CompilerServices;
+using UnityEngine.SceneManagement;
 using UnityEngine.Pool;
-using JetBrains.Annotations;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -102,11 +102,11 @@ public class PlayerController : MonoBehaviour
 
     public void RestartGame()
     { 
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        Application.Quit(); 
     }
 }
