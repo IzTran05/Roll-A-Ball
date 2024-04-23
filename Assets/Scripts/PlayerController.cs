@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
         timer.StopTimer();
         //Display our time to the win time text
         winTimeText.text = "Your time was: " + timer.GetTime().ToString("F2");
+        Debug.Log(timer.GetTime().ToString("F2"));
         pickUpText.color = Color.green;
 
         //Stop the ball from moving
